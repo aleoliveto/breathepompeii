@@ -46,7 +46,8 @@ li a:hover {
 #main-img {
     width: 100%;
     height: 600px;
-    background: url('../images/tayla-bundschuh-o52ZSNJLIkI-unsplash.jpg') no-repeat center center;
+    background: url('../images/christine-kozak-Y_AweGqK9nY-unsplash.jpg') no-repeat center center;
+    object-fit: scale-down;
     clear: both;
     margin-bottom: 25px 0 25px 0;
 }
@@ -70,5 +71,66 @@ li a:hover {
 
 #main-hd:hover {
     background-color: rgba(253, 132, 31, 0.594);
+}
+
+#description {
+    margin: auto;
+    width: 100%;
+    height: 150px;
+    padding: 10px 0 10px 0;
+}
+
+#description h2 {
+    font-size: 150%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#description li {
+    padding: 10px 0 10px 0;
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+#columnimg {
+    width: auto;
+    height: 500px;
+    clear: both;
+    margin: 5px 0 5px 0;
+}
+
+.columns {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#tourzone {
+    width: auto;
+    margin: 25px 0 25px 0;
+    
+}
+
+#tourzone h3 {
+    text-align: center;
+    padding: 25px;
+    font-size: 150%;
+    color: rgb(0, 18, 83);
+}
+
+#tour {
+    background: rgba(225, 76, 42, 0.442);
+}
+
+
+
+.tour {
+    width: 80%;
+    height: 250px;
+    object-fit: cover; /*Thanks to W3 for image fixing */
+    padding: 35px 35px 35px 35px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
