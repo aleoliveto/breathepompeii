@@ -3,9 +3,12 @@
 * {
     margin: auto;
     padding: 0px;
+    border: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Crimson Text', serif;
 }
 
@@ -53,17 +56,15 @@ li a:hover {
 }
 
 #main-hd {
-    right: 130px;
-    top: 245px;
-    margin: auto;
+    width: 100%;
+    top: 603px;
     background-color: rgba(225, 77, 42, 0.594);
-    width: 240px;
     padding-top: 10px;
     position: absolute;
-    border-radius: 50%;
 }
 
-#main-hd h2, #main-hd h3 {
+#main-hd h2,
+#main-hd h3 {
     text-align: center;
     margin: 10px;
     color: white;
@@ -96,7 +97,15 @@ li a:hover {
     width: auto;
     height: 500px;
     clear: both;
-    margin: 5px 0 5px 0;
+}
+
+#columnimg p {
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+}
+
+#columnimg hr {
+    width: 70%;
 }
 
 .columns {
@@ -105,10 +114,14 @@ li a:hover {
     object-fit: cover;
 }
 
+hr {
+    border: 1px solid #141449;
+}
+
 #tourzone {
     width: auto;
     margin: 25px 0 25px 0;
-    
+
 }
 
 #tourzone h3 {
@@ -118,19 +131,134 @@ li a:hover {
     color: rgb(0, 18, 83);
 }
 
-#tour {
-    background: rgba(225, 76, 42, 0.442);
-}
-
-
-
-.tour {
-    width: 80%;
-    height: 250px;
-    object-fit: cover; /*Thanks to W3 for image fixing */
-    padding: 35px 35px 35px 35px;
+#tour1 {
+    width: 60%;
+    height: 215px;
+    background: url('../images/tour.jpeg') no-repeat center center;
+    object-fit: cover;
+    /*Thanks to W3 for image fixing */
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
+#tour2 {
+    width: 60%;
+    height: 215px;
+    background: url('../images/tour2.jpeg') no-repeat center center;
+    object-fit: cover;
+    /*Thanks to W3 for image fixing */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#tour3 {
+    width: 60%;
+    height: 215px;
+    background: url('../images/tour3.jpeg') no-repeat center center;
+    object-fit: cover;
+    /*Thanks to W3 for image fixing */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#tour4 {
+    width: 60%;
+    height: 215px;
+    background: url('../images/tour4.jpeg') no-repeat center center;
+    object-fit: cover;
+    /*Thanks to W3 for image fixing */
+    margin-left: auto;
+    margin-right: auto;
+    /* display: block; */
+}
+
+#tour-hd {
+    width: 60%;
+    height: 215px;
+    color: #fafafa;
+    background-color: rgba(225, 187, 171, 0.246);
+    text-align: center;
+    border: 2px solid white;
+    position: absolute;
+    left: 95px;
+}
+
+#tour-hd:hover {
+    background-color: #10103cbe;
+}
+
+#tour-hd h4 {
+    font-size: 110%;
+    margin-top: 5px;
+    -webkit-text-stroke: 0.4px #141449;
+}
+
+#tour-hd p {
+    font-size: 105%;
+    padding-top: 10px;
+    color: white;
+    -webkit-text-stroke: 0.4px #141449;
+}
+
+
+#tour-hd h5 {
+    font-size: 110%;
+    padding: 55px 0 5px 5px;
+    text-align: left;
+    -webkit-text-stroke: 0.4px #141449;
+}
+
+.book-now {
+    margin-top: 20px;
+    padding: 2.5px 5px 2.5px 5px;
+    text-align: center;
+    font-size: 100%;
+    background-color: rgb(225, 77, 42);
+    color: #fafafa;
+    display: block;
+    top: 75%;
+    left: 65%;
+    position: absolute;
+}
+
+.book-now:hover {
+    background-color: rgb(225, 106, 42);
+}
+
+footer {
+    height: 80px;
+    background-color: #101039;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks>li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: white;
+}
+
+/* MEDIA QUERIES */
+
+/* @media screen and (min-width: 900px) {
+    #tour-hd {
+        display: none;
+    }
+
+    #tour {
+        width: 10%;
+        height: 215px;
+        background-color: black;
+    }
+
+} */
