@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Lato:wght@300&family=Oswald:wght@300&family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Lato:wght@300&family=Oswald:wght@300&family=Puritan&family=Sofia+Sans&display=swap');
 
 * {
     margin: auto;
@@ -45,14 +45,16 @@ li a:hover {
     color: rgb(225, 77, 42);
 }
 
+.active {
+    color: rgb(225, 77, 42);
+}
 
 #main-img {
     width: 100%;
     height: 600px;
-    background: url('../images/christine-kozak-Y_AweGqK9nY-unsplash.jpg') no-repeat center center;
-    object-fit: scale-down;
+    background: url('../images/sigmund-xvSEauDHrNI-unsplash-small.jpg') no-repeat center center;
+    object-fit: cover;
     clear: both;
-    margin-bottom: 25px 0 25px 0;
 }
 
 #main-hd {
@@ -61,10 +63,14 @@ li a:hover {
     background-color: rgba(225, 77, 42, 0.594);
     padding-top: 10px;
     position: absolute;
+    border: 1px solid white;
 }
 
 #main-hd h2,
 #main-hd h3 {
+    font-size: 150%;
+    font-family: 'Puritan', serif;
+    text-transform: uppercase;
     text-align: center;
     margin: 10px;
     color: white;
@@ -75,10 +81,15 @@ li a:hover {
 }
 
 #description {
-    margin: auto;
     width: 100%;
-    height: 150px;
+    height: 500px;
     padding: 30px 0 30px 0;
+    position: absolute;
+}
+
+#desctext {
+    width: 100%;
+    float: left;
 }
 
 #description h2 {
@@ -87,16 +98,18 @@ li a:hover {
     text-align: center;
 }
 
-#description li {
+#description p {
+    width: 80%;
     padding: 10px 0 10px 0;
     font-size: 100%;
     font-family: sans-serif;
+    text-align: left;
 }
 
 #columnimg {
-    width: auto;
+    width: 500px;
     height: 500px;
-    clear: both;
+    margin-bottom: 50px;
 }
 
 #columnimg p {
@@ -118,9 +131,14 @@ hr {
     border: 1px solid #141449;
 }
 
+.separate {
+    margin-bottom: 100px;
+}
+
 #tourzone {
     width: auto;
-    margin: 25px 0 25px 0;
+    margin: 930px 0 25px 0;
+    clear: both;
 }
 
 #tourzone h3 {
@@ -163,7 +181,6 @@ hr {
     width: 60%;
     height: 215px;
     color: #fafafa;
-    /* background-color: rgba(225, 187, 171, 0.246); */
     background-color: #10103cbe;
     text-align: center;
     border: 2px solid white;
@@ -215,12 +232,46 @@ hr {
 .book-now:hover {
     background-color: rgb(225, 106, 42);
 }
+body { 
+    min-height: 100vh; 
+    margin:0; 
+}
+/* -----FOOTER------ */
 
-footer {
-    bottom: 0;
+footer { 
+    min-height:px; 
     width: 100%;
-    height: 80px;
     background-color: #101039;
+}
+
+.contacts {
+    color: white;
+    float: left;
+    font-family: 'Puritan';
+    margin: 25px;
+    display: none;
+}
+
+.contacts h4 {
+    font-size: 110%;
+}
+.contacts p {
+    margin: 10px;
+}
+
+.hours {
+    color: white;
+    float: right;
+    font-family: 'Puritan';
+    margin: 25px;
+    display: none;
+}
+
+.hours h4 {
+    font-size: 110%;
+}
+.hours p {
+    margin: 10px;
 }
 
 .social-networks {
@@ -238,43 +289,65 @@ footer {
     color: white;
 }
 
-/* MEDIA QUERIES */
+/* ----SIGNUP---- */
 
-@media screen and (min-width: 900px) {
-
-    #menu {
-        float: right;
-        margin: 10px 25px 10px 10px;
-    }
-
-    #logo {
-        float: left;
-        margin-left: 25px;
-    }
-
-    hr {
-        display: none;
-    }
-
-    #main-hd {
-        top: 300px;
-    }
-
-    #tour-hd {
-        background-color: rgba(225, 187, 171, 0.246);
-    }
-
-    #tour-hd h5 {
-        margin: 55px 0px 25px 25px;
-    }
-    
-    .book-now {
-        top: 75%;
-        left: 85%;
-    }
+#signup-img {
+    width: 100%;
+    height: 700px;
+    background: url('../images/nick-night-N8noGei1-1I-unsplash-small.jpg') no-repeat center center;
+    clear: both;
+    margin-bottom: 25px 0 25px 0;
 }
 
-@media screen and (min-width: 900px) {
+#signup {
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.signup-form {
+    width: 330px;
+    height: 400px;
+    color: rgb(0, 18, 83);
+    font-family: 'Puritan', serif;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    border: 15px solid rgb(255, 255, 255);
+}
+
+
+
+.signup-form label {
+    margin: 10%;
+    font-size: 120%;
+    text-transform: uppercase;
+}
+
+.text-input {
+    background: transparent;
+    border-bottom: 1px solid rgb(225, 106, 42);
+    color: rgb(0, 18, 83);
+    font-size: 105%;
+    width: 100%;
+    margin: 5px 0 10px 0;
+    text-align: center;
+}
+
+.register {
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 120%;
+    font-family: 'Puritan', serif;
+    background-color: rgb(225, 77, 42);
+    color: #fafafa;
+    display: block;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1200px) {
 
     #menu {
         float: right;
@@ -292,6 +365,14 @@ footer {
 
     #main-hd {
         top: 300px;
+    }
+
+    #main-img {
+        background: url('../images/sigmund-xvSEauDHrNI-unsplash.jpg') no-repeat center center;
+    }
+
+    #tourzone {
+        margin: 550px 0 25px 0;
     }
 
     #tour-hd {
@@ -302,9 +383,67 @@ footer {
         bottom: 0;
         left: 0;
     }
-    
+
     .book-now {
         top: 75%;
         left: 80%;
     }
+
+    /* SIGNUP MEDIA QUERIES */
+    #signup-img {
+        background: url('../images/nick-night-N8noGei1-1I-unsplash.jpg') no-repeat center center;
+    }
+
+    #signup {
+        top: 20%;
+        left: 20%;
+    }
+
+    .signup-form {
+        width: 500px;
+        height: 250px;
+    }
+
+    .signup-form label {
+        margin: 3%;
+    }
+
+    #desctext {
+        width: 50%;
+        float: left;
+    }
+
+    #description h2 {
+        font-size: 170%;
+        text-align: center;
+    }
+
+    #desctext p {
+        width: 100%;
+        text-align: left;
+        margin: 30px 0px 40px 10%;
+    }
+
+    #columnimg {
+        float: right;
+    }
+
+    .contacts {
+        display: contents;
+    }
+    .hours {
+        display: contents;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 400px)  {
+
+    #columnimg {
+        float: none;
+    }
+
+    #tourzone {
+        margin: 930px 0 25px 0;
+    }
+    
 }
