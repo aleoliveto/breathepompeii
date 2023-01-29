@@ -353,6 +353,22 @@ footer {
     color: #fafafa;
     display: block;
 }
+/* ------HISTORY------ */
+
+
+#history-cont {
+    clear: both;
+}
+
+#history-cont h2 {
+    color:rgb(0, 18, 83);
+}
+
+#history-cont p {
+    font-family: 'Puritan';
+
+}
+
 
 /* MEDIA QUERIES */
 
