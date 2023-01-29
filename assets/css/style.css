@@ -232,36 +232,41 @@ hr {
 .book-now:hover {
     background-color: rgb(225, 106, 42);
 }
-body { 
-    min-height: 100vh; 
-    margin:0; 
+
+body {
+    min-height: 100vh;
+    margin: 0;
 }
+
 /* -----FOOTER------ */
 
-footer { 
-    min-height:px; 
+footer {
+    min-height: 50px;
     width: 100%;
     background-color: #101039;
+    display: flex;
 }
+
+
 
 .contacts {
     color: white;
-    float: left;
     font-family: 'Puritan';
-    margin: 25px;
     display: none;
 }
 
 .contacts h4 {
     font-size: 110%;
+    margin-bottom: 5px;
 }
+
 .contacts p {
-    margin: 10px;
+    margin-left: 5px;
+    width: 150px;
 }
 
 .hours {
     color: white;
-    float: right;
     font-family: 'Puritan';
     margin: 25px;
     display: none;
@@ -269,25 +274,29 @@ footer {
 
 .hours h4 {
     font-size: 110%;
+    margin-bottom: 5px;
 }
+
 .hours p {
-    margin: 10px;
+    margin: 0px;
+    margin-left: 5px;
 }
 
 .social-networks {
-    text-align: center;
+    display: flex;
 }
-
 .social-networks>li {
     display: inline;
+    padding: 25px;
 }
 
 .social-networks i {
     font-size: 160%;
-    margin: 1%;
-    padding: 5%;
+    margin: 5%;
+    padding: 0;
     color: white;
 }
+
 
 /* ----SIGNUP---- */
 
@@ -431,12 +440,18 @@ footer {
     .contacts {
         display: contents;
     }
+
     .hours {
         display: contents;
     }
+
+    .footerflex {
+        flex: 1;
+        padding:2% 10%;
+    }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 400px)  {
+@media screen and (max-width: 1200px) and (min-width: 400px) {
 
     #columnimg {
         float: none;
@@ -445,5 +460,5 @@ footer {
     #tourzone {
         margin: 930px 0 25px 0;
     }
-    
+
 }
