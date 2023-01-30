@@ -136,7 +136,7 @@ hr {
 
 #tourzone {
     width: auto;
-    margin: 930px 0 25px 0;
+    margin: 1050px 0 25px 0;
     clear: both;
 }
 
@@ -197,34 +197,32 @@ hr {
 #tour-hd h4 {
     font-size: 110%;
     margin-top: 5px;
-    -webkit-text-stroke: 0.4px #141449;
 }
 
 #tour-hd p {
     font-size: 105%;
     padding-top: 10px;
-    color: white;
-    -webkit-text-stroke: 0.4px #141449;
 }
 
 
 #tour-hd h5 {
     font-size: 110%;
-    padding: 55px 0 5px 5px;
-    text-align: left;
-    -webkit-text-stroke: 0.4px #141449;
+    margin: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .book-now {
-    margin-top: 20px;
+    margin: 10px;
     padding: 2.5px 5px 2.5px 5px;
     text-align: center;
     font-size: 100%;
     background-color: rgb(225, 77, 42);
     color: #fafafa;
     display: block;
-    top: 75%;
-    left: 65%;
+    bottom: 0;
+    right: 0;
     position: absolute;
 }
 
@@ -443,17 +441,13 @@ footer {
 
     #tour-hd {
         background-color: rgba(225, 187, 171, 0.246);
+        color: #141449;
     }
 
-    #tour-hd h5 {
-        bottom: 0;
-        left: 0;
+    #tour-hd:hover {
+        color: #fafafa;
     }
 
-    .book-now {
-        top: 75%;
-        left: 80%;
-    }
 
     /* SIGNUP MEDIA QUERIES */
     #signup-img {
