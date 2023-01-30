@@ -108,7 +108,6 @@ li a:hover {
 
 #columnimg {
     max-width: 100%;
-    height: 500px;
     margin-bottom: 50px;
 }
 
@@ -303,7 +302,7 @@ footer {
 #travel-img {
     max-width: 100%;
     height: 600px;
-    background: url('/assets/images/andy-holmes-h5cYy5OHDWM-unsplash.jpg') no-repeat center center;
+    background: url('../images/andy-holmes-h5cYy5OHDWM-unsplash.jpg') no-repeat center center;
     object-fit: cover;
     clear: both;
 }
@@ -523,12 +522,12 @@ footer {
 
 @media screen and (max-width: 1200px) and (min-width: 400px) {
 
-    #columnimg {
-        float: none;
-    }
-
     #tourzone {
         margin: 930px 0 25px 0;
+    }
+
+    #columnimg {
+        max-width: 80%;
     }
 
 }
