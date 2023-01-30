@@ -59,11 +59,9 @@ li a:hover {
 
 #main-hd {
     width: 100%;
-    top: 603px;
     background-color: rgba(225, 77, 42, 0.594);
     padding-top: 10px;
     position: absolute;
-    border: 1px solid white;
 }
 
 #main-hd h2,
@@ -201,7 +199,6 @@ hr {
 
 #tour-hd p {
     font-size: 105%;
-    padding-top: 10px;
 }
 
 
@@ -211,6 +208,10 @@ hr {
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+.disdesc {
+    display: none;
 }
 
 .book-now {
@@ -227,7 +228,7 @@ hr {
 }
 
 .book-now:hover {
-    background-color: rgb(225, 106, 42);
+    background-color: rgba(255, 186, 37, 0.903);
 }
 
 body {
@@ -448,7 +449,13 @@ footer {
         color: #fafafa;
     }
 
+    .activedesc {
+        display: none;
+    }
 
+    .disdesc {
+        display: contents;
+    }
     /* SIGNUP MEDIA QUERIES */
     #signup-img {
         background: url('../images/nick-night-N8noGei1-1I-unsplash.jpg') no-repeat center center;
